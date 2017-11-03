@@ -1,0 +1,49 @@
+$font-heading: 'Yeseva One', Georgia, serif;
+$font-body: 'Work Sans', Verdana, Helvetica, Arial, sans-serif;
+
+$primary-light: #6666DD;
+$primary-medium: #5E5ECE;
+$primary-dark: #5656BC;
+
+$secondary-light: #FFBA5D;
+$secondary-medium: #F1AF56;
+$secondary-dark: #E0A351;
+
+// $black: #3F3F49;
+$black: #3F3F47;
+$gray: #F2F2F8;
+$white: #FEFEFE;
+    
+
+$small: 20em;
+$medium: 40em;
+$large: 60em;
+
+$global-box-shadow: 1px 2px 3px -1px rgba(93, 90, 99, 0.54);
+
+$rem-base: 1rem;
+
+
+// Change scale
+$mod_1: 1.067;
+$mod_2: 1.333;
+
+
+// Calculate Modular Scale
+$h1-min: $mod_1*$mod_1*$mod_1*$mod_1 * 1rem;
+$h1-max: $mod_2*$mod_2*$mod_2*$mod_2 * 1rem;
+
+$h2-min: $mod_1*$mod_1*$mod_1 * 1rem;
+$h2-max: $mod_2*$mod_2*$mod_2 * 1rem;
+
+$h3-min: $mod_1*$mod_1 * 1rem;
+$h3-max: $mod_2*$mod_2 * 1rem;
+
+$h4-min: $mod_1* 1rem;
+$h4-max: $mod_2 * 1rem;
+
+$h5-min: 1rem;
+$h5-max: 1rem;
+
+$h6-min: (1rem / $mod_1);
+$h6-max: (1rem / $mod_2);

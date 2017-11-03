@@ -1,0 +1,123 @@
+.projects {
+    max-width: 59rem;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-family: $font-heading;
+    text-align: center;
+}
+
+.project-intro {
+    width: 90%;
+    max-width: 55rem;
+    margin: 0 auto 3rem auto;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 5px;
+    background-color: $gray;
+    font-size: 1rem;
+
+    @media (min-width: 40rem) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 3rem;
+        margin-top: 2rem;
+    }
+}
+
+.project-details {
+    align-self: center; // TODO: maybe not?
+    order: 2;
+}
+
+.project-thumbnail {
+    margin-top: 1.5rem;
+    align-self: end;
+
+    img {
+        display: block;
+    }
+
+    @media (min-width: 40rem) {
+        margin-top: 0;
+    }
+}
+
+.project-content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-tease {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @media (min-width: 40rem) {
+        // display: grid;
+        // grid-template-rows: auto auto;
+        // grid-template-columns: 1fr 1.5fr;
+        // grid-column-gap: 3rem;
+    }
+}
+
+.project-tease-title {
+    margin: 0;
+    text-align: left;
+    // color: #5f5fce;
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+    line-height: 1;
+}
+
+.project-tease-image {
+    grid-row: 2;
+    grid-column: 1 / 2;
+    align-self: end;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    order: 1;
+    transition: transform .3s;
+
+    @media (min-width: 40rem) {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    img {
+        display: block;
+    }
+}
+
+.project-tease-content {
+    // grid-column: 2 / 2;
+    // grid-row: 2;
+    // order: 2;
+    // align-self: center;
+
+    grid-column: 2 / 2;
+    grid-row: 2;
+    order: 2;
+    align-self: center;
+    margin-top: -4rem;
+    background-color: #5f5fce;
+    color: white;
+    z-index: 10;
+    position: relative;
+    margin-left: 3rem;
+    padding: 1rem;
+    margin-right: -2rem;
+    text-align: center;
+    box-shadow: 3px 3px 9px -3px rgba(0, 0, 0, 0.26);
+    transition: transform .3s;
+}
+
+.project-tease:hover .project-tease-content {
+    transform: translateY(-3rem);
+}
+
+.project-tease:hover .project-tease-image {
+    transform: scale(1.02);
+}

@@ -1,0 +1,37 @@
+{% include header.html %}
+
+<main>
+	<article>
+		<section class="site-intro">
+			<div class="site-intro-content">
+				<h1 class="site-intro-heading">
+					<div>Hello I'm</div>
+					<div>Heather<br>Brokmeier</div>
+					<div>Front End Web Developer</div>
+				</h1>
+			</div>
+	
+			<img src="{{ site.url }}/assets/img/my-face-photo.png" alt="" class="site-intro-image">
+		</section>
+
+		<section class="projects">
+			<h2 class="section-heading">Projects</h2>
+
+			{% for project in site.projects limit:3 %}
+				<section class="project-intro">
+						<div class="project-details project-tease-details">
+							<h3 class="project-title project-tease-title">{{ project.title }}</h3>
+							<a href="{{ site.baseurl }}{{ project.url }}" class="button">View this Project</a>
+						</div>
+			
+						<div class="project-thumbnail">
+							<img src="{{ project.thumbnail }}" alt="">
+						</div>
+					</section>
+			{% endfor %}
+
+		</section>
+	</article>
+</main>
+
+{% include footer.html %}

@@ -1,0 +1,65 @@
+//
+// Given some base values, outputs a font size with a min font-size
+// that is fluid based on the vw.
+//
+// From: https://blog.codepen.io/2016/10/31/fluid-type-blogs/
+//
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+        & {
+            font-size: $min-font-size;
+            @media screen and (min-width: $min-vw) {
+                font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+            }
+
+            @media screen and (min-width: $max-vw) {
+                font-size: $max-font-size;
+            }
+        }
+    } @else {
+        @error "Detected mixed units. Please use the same units for all parameters. " + $u1 +", " + $u2 + ", " + $u3 +", "+ $u4;
+    }
+}
+
+// Strips unit from a value.
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+// Adds media query for a width.
+@mixin breakpoint( $width : null ) {
+    @if ($width != null) {
+        @media only screen and (min-width: $width) {
+            @content;
+        }
+    } @else {
+        @error "No value passed.";
+    }
+}
+
+
+/// Rem Calculator
+/// Converts one or more pixel values into matching rem values. This function works a lot like `convert-to-rem`, except it can convert more than one value at once, which is useful when setting multiple values on a `margin` or `padding` property.
+///
+/// @param {number|list} $values - One or more values to convert. Be sure to separate them with spaces and not commas. If you need to convert a comma-separated list, wrap the list in parentheses.
+///
+/// @return A list of converted values.
+@function rem-calc($values, $base-value: null) {
+    @if $base-value == null {
+        $base-value: $rem-base;
+    }
+    $max: length($values);
+
+    @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+
+    $remValues: ();
+    @for $i from 1 through $max {
+        $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+    }
+    @return $remValues;
+}

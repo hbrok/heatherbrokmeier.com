@@ -1,0 +1,163 @@
+a {
+    color: $primary-dark;
+    border-bottom: 2px solid $gray;
+    text-decoration: none;
+    transition: border .3s, color .3s;
+    
+    &:hover,
+    &:active,
+    &:focus {
+        border-bottom-color: $primary-light;        
+        color: $primary-light;
+    }
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+h1 {
+    @include fluid-type(37.5rem, 80rem, $h1-min, $h1-max);
+
+    font-family: $font-heading;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+h2 {
+    @include fluid-type(37.5rem, 80rem, $h2-min, $h2-max);
+
+    font-family: $font-heading;
+    font-size: 36px;
+}
+
+h3 {
+    @include fluid-type(37.5rem, 80rem, $h3-min, $h3-max);
+
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h4 {
+    @include fluid-type(37.5rem, 80rem, $h4-min, $h4-max);
+
+    font-size: 32px;
+    font-weight: 500;
+}
+
+h5 {
+    @include fluid-type(37.5rem, 80rem, $h5-min, $h5-max);
+
+    font-size: 26px;
+    font-weight: 500;
+}
+
+h6 {
+    @include fluid-type(37.5rem, 80rem, $h6-min, $h6-max);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+ul,
+ol {
+    margin: 0 0 2em 1.5em;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.5; 
+    
+    li::before {
+        display: inline-block;
+        width: 1.5em;
+        margin-left: -2em;
+        padding-right: 0.5em;
+        text-align: right;
+    }
+}
+
+ul li {
+    margin-bottom: 0.5em;
+    
+    &::before {
+        content: "•";
+        font-size: 1.875rem;
+        line-height: 0;
+        color: $primary-light;
+    }
+}
+
+ol li {
+    margin-bottom: 0.5em;
+    counter-increment: step-counter;
+
+    &::before {
+        content: counter(step-counter) ".";
+        color: $primary-light;
+        font-family: $font-heading;
+    }
+}
+
+/*
+ * 1. Left/right negative margin are equal to padding on .wrapper
+ *    so they will touch edge of browser on smaller screens without
+ *    overflowing.
+ */
+pre,
+blockquote {
+    margin: 0 -2em 2em -2em; // 1
+    background-color: $gray;
+    border-top: 10px solid $primary-light;
+    
+    a {
+        border-bottom-color: rgba($primary-light, .5);
+    }
+}
+
+pre {
+    padding: 2rem 6%;
+    font-size: 1rem;
+    line-height: 1.3;
+    overflow-x: scroll;
+}
+
+blockquote {
+    padding: 2rem 8%;
+    text-align: center;
+    font-style: italic;
+}
+
+p code {
+    padding: .25rem .5rem;
+    background-color: $gray;
+    border-radius: .5rem;
+    font-family: monospace, monospace;
+    font-size: .85em;
+}
+
+.button {
+    display: inline-block;
+    margin-bottom: .5em;
+    padding: .25em .75em;
+    border: 2px solid $primary-medium;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color .3s, color .3s, transform .3s;
+    
+    &:hover {
+        background-color: $primary-medium;
+        color: $white;
+        transform: translateY(-3px);
+        box-shadow: $global-box-shadow;
+    }
+}

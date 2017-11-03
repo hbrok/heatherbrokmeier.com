@@ -1,0 +1,53 @@
+.site-header-wrapper {
+    background-color: $primary-light;
+        background: linear-gradient(to top, #6666DD, hsla(234, 67%, 59%, 1));
+}
+
+.site-header {
+    padding: 1.5rem 3rem;
+    text-align: center;
+
+    @media (min-width: 40rem) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+.site-logo {
+    display: block;
+    align-self: center;
+    justify-self: left;
+    margin-bottom: 1.5rem;
+    border: 0;
+    
+    @media (min-width: 40rem) {
+        margin: 0;
+    }
+}
+
+.header-nav {
+    a {
+        padding: .5rem 1rem;
+        border-bottom-color: transparent;
+        color: $white;
+        border-radius: 5px;
+        background: transparent;
+        transition: background .3s;
+
+        &:hover {
+            background: $gray;
+            color: $black;
+            box-shadow: $global-box-shadow;
+        }
+    }
+    
+    @include breakpoint ( $medium ) {
+        margin: 0;
+        align-self: center;
+        justify-self: right;
+        list-style-type: none;
+    }
+}
+

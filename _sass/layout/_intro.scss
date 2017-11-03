@@ -1,0 +1,53 @@
+.site-intro {
+    display: grid;
+    grid-template-areas:
+        "content"
+        "image";
+    max-width: 60rem;
+    margin: 3rem auto;
+    
+    @include breakpoint( $medium ) {
+        grid-template-areas: "image content";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.site-intro-content {
+    grid-area: content;
+    justify-self: center;
+    align-self: center;
+}
+
+.site-intro-image {
+    grid-area: image;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    
+    @include breakpoint( $medium ) {
+        width: 100%;
+    }
+}
+
+.site-intro-heading {
+    line-height: 1;
+    text-align: center;
+    
+    @include breakpoint( $medium ) {
+        text-align: left;
+    }
+
+    & :first-child,
+    & :last-child {
+        @include fluid-type(37.5rem, 80rem, 1.125rem, 1.625rem);
+
+        font-family: $font-body;
+        font-weight: normal;
+    }
+
+    & :nth-child(2) {
+        @include fluid-type(37.5rem, 80rem, 2rem, $h1-max);
+        
+        margin: .5em 0;
+    }
+}
