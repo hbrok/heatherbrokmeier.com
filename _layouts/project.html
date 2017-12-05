@@ -21,11 +21,11 @@
 				{% if page.link or page.source %}
 					<p>
 						{% if page.link %}
-							<a href="" class="button">Visit Site</a>
+							<a href="{{ page.link }}" class="button">Visit Site</a>
 						{% endif %}
 
 						{% if page.source %}
-							<a href="" class="button">Source Code</a>
+							<a href="{{ page.source }}" class="button">Source Code</a>
 						{% endif %}
 					</p>
 				{% endif %}
