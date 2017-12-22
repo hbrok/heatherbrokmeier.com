@@ -84,7 +84,7 @@ ol {
     }
 }
 
-ul li {
+.container ul li {
     margin-bottom: 0.5em;
     
     &::before {
@@ -95,7 +95,7 @@ ul li {
     }
 }
 
-ol li {
+.container ol li {
     margin-bottom: 0.5em;
     counter-increment: step-counter;
 

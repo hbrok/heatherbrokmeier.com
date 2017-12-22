@@ -1,48 +1,58 @@
-
 <footer class="site-footer">
-	<div class="footer-navigation-wrapper">
-		<ul class="footer-navigation" role="navigation">
+	<div class="site-footer-inner">
+		<h4 class="site-footer-title">Get in Touch</h4>
+
+		<ul class="icon-diamond-list" role="navigation">
 			{% if site.github_username %}
 				<li>
-					<span class="footer-navigation-title">Github</span>
+					<!-- <span class="footer-navigation-title">Github</span>
 					<a href="https://www.github.com/{{ site.github_username }}" class="link">
 						{{ site.github_username }}
+					</a> -->
+
+					<a href="https://www.github.com/{{ site.github_username }}" class="link">
+						{% include icons/github.html %}
 					</a>
 				</li>
+
 			{% endif %}
 
 			{% if site.codepen_username %}
 				<li>
-					<span class="footer-navigation-title">CodePen</span>
+					{% comment %} <span class="footer-navigation-title">CodePen</span> {% endcomment %}
 					<a href="http://codepen.io/{{ site.codepen_username }}" class="link">
-						{{ site.codepen_username }}
+						{% comment %} {{ site.codepen_username }} {% endcomment %}
+						{% include icons/codepen.html %}
 					</a>
 				</li>
 			{% endif %}
 			
 			{% if site.twitter_username %}
 				<li>
-					<span class="footer-navigation-title">Twitter</span>
+					{% comment %} <span class="footer-navigation-title">Twitter</span> {% endcomment %}
 					<a href="https://www.twitter.com/{{ site.twitter_username }}" class="link">
-						{{ site.twitter_username }}
+						{% comment %} {{ site.twitter_username }} {% endcomment %}
+						{% include icons/twitter.html %}
 					</a>
 				</li>
 			{% endif %}
 			
 			{% if site.email %}
 				<li>
-					<span class="footer-navigation-title">Email</span>
+					{% comment %} <span class="footer-navigation-title">Email</span> {% endcomment %}
 					<a href="mailto:{{ site.email }}" class="link">
-						{{ site.email }}
+						{% include icons/envelope.html %}
+						{% comment %} {{ site.email }} {% endcomment %}
 					</a>
 				</li>
 			{% endif %}
 			
 			{% if site.linkedin_username %}
 				<li>
-					<span class="footer-navigation-title">LinkedIn</span>
+					{% comment %} <span class="footer-navigation-title">LinkedIn</span> {% endcomment %}
 					<a href="https://www.{{ site.linkedin_username }}" class="link">
-						{{ site.linkedin_username }}
+						{% include icons/linkedin.html %}
+						{% comment %} {{ site.linkedin_username }} {% endcomment %}
 					</a>
 				</li>
 			{% endif %}

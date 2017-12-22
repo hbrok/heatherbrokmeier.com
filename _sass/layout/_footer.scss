@@ -1,25 +1,76 @@
 .site-footer {
-    margin-top: 3em;
+    display: flex;
+    margin: 3rem auto 0 auto;
+    padding: 1em 0;
     background-color: $primary-light;
     color: $white;
-    
+    text-align: center;
+
     a {
         color: inherit;
     }
 }
 
-.footer-navigation-wrapper {
-    display: flex;
-}
-
-.footer-navigation {
+.site-footer-inner {
     margin: 0 auto;
-    padding: 1em 0;
+    text-align: center;
 }
 
-.footer-navigation-title {
-	font-family: $font-heading;
-    display: inline-block;
-    font-weight: bold;
-    margin-right: 1em;
+.site-footer-title {
+    font-family: $font-heading;
+}
+
+.icon-diamond-list {
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    svg {
+        width: .85em;
+        height: .85em;
+        display: block;
+        padding: .35rem;
+        position: relative;
+    }
+
+    a {
+        position: relative;
+        padding: 0;
+        margin: 0.4rem;
+        text-decoration: none;
+        border: 0;
+        display: block;
+        transition: transform .3s;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: $global-box-shadow;
+        }
+
+        &:hover svg {
+            color: $primary-light;
+        }
+
+        &:hover::before {
+            background-color: $gray;
+        }
+
+        &::before {
+            content: "";
+            background-color: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -2px;
+            left: -2px;
+            border-radius: 8px;
+            transform: rotate(45deg);
+            border: 2px solid $gray;
+            transition: background-color .3s;
+        }
+    }
 }
