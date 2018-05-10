@@ -10,7 +10,7 @@
 					<div>Front End Web Developer</div>
 				</h1>
 			</div>
-	
+
 			<img src="{{ site.url }}/assets/img/my-face-photo.png" alt="" class="site-intro-image">
 		</section>
 
@@ -19,15 +19,16 @@
 
 			{% for project in site.projects limit:3 %}
 				<section class="project-intro">
-						<div class="project-details project-tease-details">
-							<h3 class="project-title project-tease-title">{{ project.title }}</h3>
-							<a href="{{ site.baseurl }}{{ project.url }}" class="button">View this Project</a>
-						</div>
-			
-						<div class="project-thumbnail">
-							<img src="{{ project.thumbnail }}" alt="">
-						</div>
-					</section>
+					<div class="project-details project-tease-details">
+						<h3 class="project-title project-tease-title">{{ project.title }}</h3>
+						<p>{{ project.skills }}</p>
+						<a href="{{ site.baseurl }}{{ project.url }}" class="button">View this Project</a>
+					</div>
+
+					<div class="project-thumbnail">
+						<img src="{{ project.thumbnail }}" alt="">
+					</div>
+				</section>
 			{% endfor %}
 
 		</section>
