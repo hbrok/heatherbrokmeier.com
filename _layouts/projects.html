@@ -1,0 +1,25 @@
+{% include header.html %}
+
+<main>
+  <section class="container">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+  </section>
+  
+  <section class="projects">
+    {% for project in site.projects %}
+      <article class="project-intro">
+        <div class="project-details project-tease-details">
+          <h3 class="project-title project-tease-title">{{ project.title }}</h3>
+          <a href="{{ site.baseurl }}{{ project.url }}" class="button">View this Project</a>
+        </div>
+
+        <div class="project-thumbnail">
+          <img src="{{ project.thumbnail }}" alt="">
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+</main>
+
+{% include footer.html %}
