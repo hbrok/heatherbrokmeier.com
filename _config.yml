@@ -27,11 +27,17 @@ permalink: /:year/:month/:day/:title/
 
 # Build settings
 markdown: kramdown
-gems:
+
+plugins:
   - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .sass-cache
+
+keep:
+  - assets
   
 collections:
   projects:
