@@ -17,7 +17,8 @@
 		<section class="projects">
 			<h2 class="section-heading">Projects</h2>
 
-			{% for project in site.projects limit:3 %}
+			{% assign projects = site.projects | sort: 'order' %}
+			{% for project in projects limit:3 %}
 				<section class="project-intro">
 					<div class="project-details project-tease-details">
 						<h3 class="project-title project-tease-title">{{ project.title }}</h3>

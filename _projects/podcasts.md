@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Podcast Search
+order: 1
 thumbnail: /assets/img/projects/podcast-search-main.png
 link: https://hb-podcast-app.herokuapp.com/
 source: https://github.com/hbrok/podcast-app

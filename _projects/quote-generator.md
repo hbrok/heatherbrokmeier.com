@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Quote Generator
+order: 2
 thumbnail: /assets/img/projects/quote-generator-main.png
 link: https://ancient-lake-50582.herokuapp.com/
 skills: JavaScript, HTML, CSS, PHP, Progressive Enhancement
