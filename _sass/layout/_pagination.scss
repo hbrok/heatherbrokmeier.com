@@ -1,0 +1,45 @@
+.page-navigation {
+  margin-bottom: -3rem; // Compensate for footer margin-top.
+  margin-top: 3rem;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.page-navigation-prev,
+.page-navigation-next {
+  padding: 2rem;
+  width: 50%;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #F2F2F8;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: #e5e5f1;
+  }
+}
+
+.page-navigation-next {
+  float: right;
+  text-align: right;
+  border-left: 4px solid $white;
+  border-top-left-radius: 8px;
+
+  @include breakpoint(600px) {
+    padding-right: 4rem;
+  }
+}
+
+.page-navigation-prev {
+  float: left;
+  border-right: 4px solid $white;
+  border-top-right-radius: 8px;
+
+  @include breakpoint(600px) {
+    padding-left: 4rem;
+  }
+}
