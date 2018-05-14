@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Bezzerwizzer
-order: 3
+order: 200
 thumbnail: /assets/img/projects/bezzerwizzer-main.png
 link: https://hbrok.github.io/bezzerwizzer/
 source: https://github.com/hbrok/bezzerwizzer
