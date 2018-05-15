@@ -5,23 +5,17 @@
 		<ul class="icon-diamond-list" role="navigation">
 			{% if site.github_username %}
 				<li>
-					<!-- <span class="footer-navigation-title">Github</span>
 					<a href="https://www.github.com/{{ site.github_username }}" class="link">
-						{{ site.github_username }}
-					</a> -->
-
-					<a href="https://www.github.com/{{ site.github_username }}" class="link">
+						<span class="visually-hidden">GitHub</span>
 						{% include icons/github.html %}
 					</a>
 				</li>
-
 			{% endif %}
 
 			{% if site.codepen_username %}
 				<li>
-					{% comment %} <span class="footer-navigation-title">CodePen</span> {% endcomment %}
 					<a href="http://codepen.io/{{ site.codepen_username }}" class="link">
-						{% comment %} {{ site.codepen_username }} {% endcomment %}
+						<span class="visually-hidden">CodePen</span>
 						{% include icons/codepen.html %}
 					</a>
 				</li>
@@ -29,9 +23,8 @@
 			
 			{% if site.twitter_username %}
 				<li>
-					{% comment %} <span class="footer-navigation-title">Twitter</span> {% endcomment %}
 					<a href="https://www.twitter.com/{{ site.twitter_username }}" class="link">
-						{% comment %} {{ site.twitter_username }} {% endcomment %}
+						<span class="visually-hidden">Twitter</span>
 						{% include icons/twitter.html %}
 					</a>
 				</li>
@@ -39,20 +32,9 @@
 			
 			{% if site.email %}
 				<li>
-					{% comment %} <span class="footer-navigation-title">Email</span> {% endcomment %}
 					<a href="mailto:{{ site.email }}" class="link">
+							<span class="visually-hidden">Email</span>
 						{% include icons/envelope.html %}
-						{% comment %} {{ site.email }} {% endcomment %}
-					</a>
-				</li>
-			{% endif %}
-			
-			{% if site.linkedin_username %}
-				<li>
-					{% comment %} <span class="footer-navigation-title">LinkedIn</span> {% endcomment %}
-					<a href="https://www.{{ site.linkedin_username }}" class="link">
-						{% include icons/linkedin.html %}
-						{% comment %} {{ site.linkedin_username }} {% endcomment %}
 					</a>
 				</li>
 			{% endif %}
@@ -60,32 +42,6 @@
 	</div>
 </footer>
 
-{% comment %}
-	<!--<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>-->
-	<script>
-	//	window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')
-	</script>
-	<script src="/assets/js/plugins.js"></script>
-	<script src="/assets/js/main.js"></script>
-
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-	<script>
-		(function(b, o, i, l, e, r) {
-			b.GoogleAnalyticsObject = l;
-			b[l] || (b[l] =
-					function() {
-				(b[l].q = b[l].q || []).push(arguments)
-			});
-			b[l].l = +new Date;
-			e = o.createElement(i);
-			r = o.getElementsByTagName(i)[0];
-			e.src = 'https://www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e, r)
-		}(window, document, 'script', 'ga'));
-		ga('create', 'UA-XXXXX-X', 'auto');
-		ga('send', 'pageview');
-	</script>
-{% endcomment %}
 </body>
 
 </html>
