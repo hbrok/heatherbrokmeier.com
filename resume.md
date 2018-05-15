@@ -30,25 +30,25 @@ title: Resume
 - Developed responsive and optimized WordPress sites from development to launch using a combination of WordPress, Foundation, and Timber.
 - Created boilerplate code that is used to start new WordPress projects, decreasing time needed for starting sites and allowing for easier site maintenance for developers.
 - Increased front-end performance of sites by implementing optimizations in our starter boilerplate, such as combining CSS and JavaScript to reduce requests, removing blocking requests, and switching to SVG icon sets.
-- Updated legacy WordPress sites
+- Updated legacy WordPress sites.
 
 {:.resume-heading}
 ### UWSP Web and Media Services
 
 **Web Developer** // August 2011 – March 2012  
 *University of Wisconsin–Stevens Point*  
-- Moved existing web content to SharePoint
-- Designed and developed sites in SharePoint
-- Taught clients how to maintain and update these sites
+- Moved existing web content to SharePoint.
+- Designed and developed sites in SharePoint.
+- Taught clients how to maintain and update these sites.
 
 {:.resume-heading}
 ### Allen Center Media and Promotions 
 
 **Web Developer** // June 2010 – July 2011  
 *University of Wisconsin–Stevens Point*  
-- Redesigned and developed website
-- Edited and updated website with new content
-- Assisted graphic design team by reviewing print materials such as posters, mailers, and brochures
+- Redesigned and developed website.
+- Edited and updated website with new content.
+- Assisted graphic design team by reviewing print materials such as posters, mailers, and brochures.
 
 ## Skills
 - WordPress (creating custom themes and plugins)

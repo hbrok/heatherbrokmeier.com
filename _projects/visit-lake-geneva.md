@@ -12,7 +12,7 @@ My aim on this project was to improve site performance. The changes I made incre
 These were the basic things I addressed:
 
 * Replaced WordPress plugins (Ubermenu and Revolution Slider) with plugins pre-bundled with Foundation (which the site was already using)
-* Added task runner (gulp) and minified & concatenated CSS and JavaScript files
+* Added task runner (gulp) to minify and concatenate CSS and JavaScript files
 * Compressed all theme images
 * Lazyloaded images and YouTube videos on homepage
 * Lazyloaded fonts

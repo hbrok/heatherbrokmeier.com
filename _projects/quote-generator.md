@@ -13,4 +13,4 @@ I decided to make a quote generator that would fetch a random quote, font, and c
 
 As someone who cares about performance, I liked the challenge of making such a lightweight site. I also enjoyed being able to connect to so many APIs and make them work together. I also pushed myself to use vanilla JavaScript without any frameworks. It helped me learn a lot and caused me to take that approach in more recent projects.
 
-I knew I wanted to use an easy templating language so I could get statred quickly, so I decided on PHP and Mustache due to my familiarity with them.
+I knew I wanted to use an easy templating language so I could get started quickly, so I decided on PHP and Mustache due to my familiarity with them.
