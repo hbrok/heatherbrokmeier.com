@@ -32,7 +32,9 @@
 			</div>
 
 			<div class="project-thumbnail">
-				<img src="{{ page.thumbnail }}" alt="">
+				{% if page.link %}<a href="{{ page.link }}">{% endif %}
+					<img src="{{ page.thumbnail }}" alt="Screenshot of {{ page.title }}">
+				{% if page.link %}</a>{% endif %}
 			</div>
 		</section>
 
