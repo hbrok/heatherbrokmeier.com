@@ -9,9 +9,9 @@ order: 100
 
 Custom WordPress site built for UC Hunting Properties, a realty company in Wisconsin.
 
-Extensive customization in the backend of WordPress using Advanced Custom Fields. With multiple offices each needing their own login to add and update properties, we focused on making the user interface for editing properties straight-forward as possible.
+This site has extensive customization in the WordPress backend using Advanced Custom Fields. With multiple offices each needing their own login to add and update properties, I focused on making the user interface for editing properties straight-forward as possible.
 
-There is a lot going on "behind the scenes" on this site. Each office UCH is affiliated with needed an individual login for adding, updating, and managing their own listings. New listings are administrator before being published.
+There is a lot going on "behind the scenes" on this site. Each office UCH is affiliated with needed an individual login for adding, updating, and managing their own listings. New listings are approved by an administrator before being published.
 
 One pain point from their previous website was keeping track of their city/state/county taxonomy that was used for searching properties on the front end. Editors were able to create new terms (or skip adding them at all) which resulted in duplicate terms, misspelled terms, and some properties with no terms at all. This made some properties impossible to find in the search.
 

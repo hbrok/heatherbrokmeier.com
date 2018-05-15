@@ -12,4 +12,4 @@ This project is based on the board game [Bezzerwizzer](https://en.wikipedia.org/
 
 My goal was to make it easy for my friends to keep track of game stats without having to write everything down. This way I can set up my physical copy of the game, and they can use the online version and everyone will know what's going on.
 
-I used this project as an opportunity to get more practice using ES6 (with no frameworks!) and CSS Grid. I don't have any fallbacks in place for those, but this project was targeted at my friends browser support was easy to figure out.
+I used this project as an opportunity to practice using ES6 with no frameworks and CSS Grid.
