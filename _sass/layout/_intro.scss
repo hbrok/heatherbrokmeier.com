@@ -1,4 +1,5 @@
 .site-intro {
+    display: flex;
     display: grid;
     grid-template-areas:
         "content"
@@ -16,17 +17,13 @@
     grid-area: content;
     justify-self: center;
     align-self: center;
+    order: 2; // Flex fallback
 }
 
 .site-intro-image {
     grid-area: image;
     margin: 0 auto;
-    width: 80%;
     text-align: center;
-    
-    @include breakpoint( $medium ) {
-        width: 100%;
-    }
 }
 
 .site-intro-heading {
