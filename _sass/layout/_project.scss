@@ -27,7 +27,7 @@
 }
 
 .project-details {
-    align-self: center; // TODO: maybe not?
+    align-self: center;
     order: 2;
     flex-basis: 50%;
 }
@@ -57,19 +57,11 @@
     max-width: 60rem;
     margin: 0 auto;
     padding: 0 1rem;
-
-    @media (min-width: 40rem) {
-        // display: grid;
-        // grid-template-rows: auto auto;
-        // grid-template-columns: 1fr 1.5fr;
-        // grid-column-gap: 3rem;
-    }
 }
 
 .project-tease-title {
     margin: 0;
     text-align: left;
-    // color: #5f5fce;
     font-size: 3rem;
     margin-bottom: 1.4rem;
     line-height: 1;
@@ -96,11 +88,6 @@
 }
 
 .project-tease-content {
-    // grid-column: 2 / 2;
-    // grid-row: 2;
-    // order: 2;
-    // align-self: center;
-
     grid-column: 2 / 2;
     grid-row: 2;
     order: 2;
