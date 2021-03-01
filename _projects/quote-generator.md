@@ -1,5 +1,4 @@
 ---
-layout: project
 title: Quote Generator
 order: 2
 thumbnail: /assets/img/projects/quote-generator-main.png

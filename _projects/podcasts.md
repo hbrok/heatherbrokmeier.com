@@ -1,5 +1,4 @@
 ---
-layout: project
 title: Podcast Search
 order: 1
 thumbnail: /assets/img/projects/podcast-search-main.png

@@ -1,5 +1,4 @@
 ---
-layout: project
 title: Visit Lake Geneva
 thumbnail: /assets/img/projects/visit-lake-geneva-main.png
 skills: Performance improvements

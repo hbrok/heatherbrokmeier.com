@@ -1,5 +1,4 @@
 ---
-layout: project
 title: UC Hunting Properties
 skills: WordPress, HTML, CSS, PHP, SVG
 thumbnail: /assets/img/projects/uchunting-properties-main.png

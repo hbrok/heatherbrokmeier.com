@@ -1,0 +1,30 @@
+{
+  "name": "heatherbrokmeier",
+  "version": "1.0.0",
+  "description": "My personal site.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --style=compressed src/scss/style.scss assets/css/style.css",
+    "watch:eleventy": "npx @11ty/eleventy --serve",
+    "watch:sass": "npm run sass -- --watch",
+    "start": "npm-run-all sass --parallel watch:*",
+    "build": "npm run sass && npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbrok/heatherbrokmeier.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hbrok/heatherbrokmeier.com/issues"
+  },
+  "homepage": "https://github.com/hbrok/heatherbrokmeier.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "markdown-it-attrs": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.32.8"
+  }
+}

@@ -1,5 +1,4 @@
 ---
-layout: project
 title: Fort Myers Beach Chamber
 skills: WordPress, HTML, CSS, PHP
 thumbnail: /assets/img/projects/fmb-main.png

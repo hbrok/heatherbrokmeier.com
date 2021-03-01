@@ -1,5 +1,4 @@
 ---
-layout: project
 title: Wilderness Resort
 thumbnail: /assets/img/projects/wilderness-main.png
 role: Web Development Front & Back

@@ -1,4 +1,4 @@
 # heatherbrokmeier.com
-My personal site, made using [Jekyll](https://jekyllrb.com/).
+My personal site, made using [Eleventy](https://www.11ty.dev/).
 
-Run `bundle exec jekyll serve ` to build.
+Run `npx @11ty/eleventy --serve` to build.

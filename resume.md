@@ -5,15 +5,13 @@ title: Resume
 
 ## Education
 
-{:.resume-heading}
-### University of Wisconsin–Stevens Point  
+### University of Wisconsin–Stevens Point   {.resume-heading}
 **Bachelor of Arts** in Web and Digital Media Development  
 *December 2014*
 
 ## Experience
 
-{:.resume-heading}
-### Vector & Ink
+### Vector & Ink {.resume-heading}
 
 **Lead Web Developer** // August 2016 – Present  
 *Wisconsin Dells, Wisconsin*   
@@ -21,9 +19,7 @@ title: Resume
 - Oversee a three person development team to maintain coding standards and best practices. Share knowledge and give assistance when needed.
 - Train and mentor new developers on development process, coding standards, and best practices and familiarize them with current processes and the frameworks and technology used.
 - Maintain library of reusable code including WordPress starter theme, custom plugins, and code snippets used to speed up development time.
-
-{:.resume-heading}
-### Vector & Ink
+### Vector & Ink {.resume-heading}
 
 **Web Developer** // August 2015 – August 2016    
 *Wisconsin Dells, Wisconsin*   
@@ -32,8 +28,7 @@ title: Resume
 - Increased front-end performance of sites by implementing optimizations in our starter boilerplate, such as combining CSS and JavaScript to reduce requests, removing blocking requests, and switching to SVG icon sets.
 - Updated legacy WordPress sites.
 
-{:.resume-heading}
-### UWSP Web and Media Services
+### UWSP Web and Media Services {.resume-heading}
 
 **Web Developer** // August 2011 – March 2012  
 *University of Wisconsin–Stevens Point*  
@@ -41,8 +36,7 @@ title: Resume
 - Designed and developed sites in SharePoint.
 - Taught clients how to maintain and update these sites.
 
-{:.resume-heading}
-### Allen Center Media and Promotions 
+### Allen Center Media and Promotions  {.resume-heading}
 
 **Web Developer** // June 2010 – July 2011  
 *University of Wisconsin–Stevens Point*  

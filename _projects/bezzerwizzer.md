@@ -1,5 +1,4 @@
 ---
-layout: project
 title: Bezzerwizzer
 order: 200
 thumbnail: /assets/img/projects/bezzerwizzer-main.png
