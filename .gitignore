@@ -3,3 +3,6 @@ _site
 _drafts/
 node_modules
 assets/*.css
+
+# Local Netlify folder
+.netlify
