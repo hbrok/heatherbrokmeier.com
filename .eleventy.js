@@ -11,6 +11,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.addPassthroughCopy('files');
 
+  // Copy `src/favicon` to site root
+  eleventyConfig.addPassthroughCopy({ "src/favicon": "/" });
+
   // Add 'sort' filter -- sorts a set of pages by `order` data
   eleventyConfig.addFilter('sort', function(collectionObjects) {
     return collectionObjects.sort((a, b) => {
