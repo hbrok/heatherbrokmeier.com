@@ -2,7 +2,7 @@ _site
 .sass-cache
 _drafts/
 node_modules
-assets/*.css
+assets/css/
 
 # Local Netlify folder
 .netlify
