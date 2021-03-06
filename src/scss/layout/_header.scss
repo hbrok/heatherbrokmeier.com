@@ -1,53 +1,20 @@
-.site-header-wrapper {
+.site-header-svg {
     background-color: $primary-light;
-        background: linear-gradient(to top, #6666DD, hsla(234, 67%, 59%, 1));
-}
-
-.site-header {
-    padding: 1.5rem 3rem;
-    text-align: center;
-
-    @media (min-width: 40rem) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-left: 6rem;
-        padding-right: 6rem;
-    }
-}
-
-.site-logo {
-    display: block;
-    align-self: center;
-    justify-self: left;
-    margin-bottom: 1.5rem;
-    border: 0;
-    
-    @media (min-width: 40rem) {
-        margin: 0;
-    }
 }
 
 .header-nav {
-    a {
-        padding: .5rem 1rem;
-        border-bottom-color: transparent;
-        color: $white;
-        border-radius: 5px;
-        background-color: transparent;
-        transition: background-color .3s;
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 3rem;
+    text-align: center;
 
-        &:hover {
-            background-color: $gray;
-            color: $black;
-            box-shadow: $global-box-shadow;
-        }
+    @media (min-width: 60rem) {
+        text-align: left;
     }
-    
-    @include breakpoint ( $medium ) {
-        margin: 0;
-        align-self: center;
-        justify-self: right;
-        list-style-type: none;
+
+    .home-link {
+        border: 0;
+        font-family: $font-heading;
+        font-size: 1.5rem;
     }
 }
-

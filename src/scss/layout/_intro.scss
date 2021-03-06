@@ -22,8 +22,13 @@
 
 .site-intro-image {
     grid-area: image;
-    margin: 0 auto;
+    margin: 3rem 1rem;
+    margin-bottom: 3rem;
     text-align: center;
+
+    @include breakpoint( $medium ) {
+        margin: 0;
+    }
 }
 
 .site-intro-heading {
@@ -36,15 +41,13 @@
 
     & :first-child,
     & :last-child {
-        @include fluid-type(37.5rem, 80rem, 1.125rem, 1.625rem);
-
         font-family: $font-body;
         font-weight: normal;
+        font-size: 1.625rem;
     }
 
     & :nth-child(2) {
-        @include fluid-type(37.5rem, 80rem, 2rem, $h1-max);
-        
         margin: .5em 0;
+        font-size: $h1-max;
     }
 }
