@@ -1,13 +1,15 @@
 ---
-title: Fort Myers Beach Chamber
-skills: WordPress, HTML, CSS, PHP
+title: Fort Myers Beach Chamber of Commerce
 thumbnail: /assets/img/projects/fmb-main.png
 link: https://www.fortmyersbeach.org/
-order: 100
+role: Web Development Front & Back
+skills: WordPress, Timber, HTML5, SCSS
+excerpt: Custom WordPress build for a chamber of commerce.
+order: 60
 ---
 
-This was a responsive, custom WordPress site built for Fort Myers Beach Chamber of Commerce, located in Fort Myers Beach, Florida.
+This was a custom WordPress site built for Fort Myers Beach Chamber of Commerce, located in Fort Myers Beach, Florida. They needed a website with a fresh look that allowed them to easily add and update content.
 
-In addition to a complete site redesign, all of the data from their previous site needed to be migrated WordPress. This ended up being ~400 member pages which each needed their own account. These member accounts needed the ability to edit and update their own member listing page as well as add and edit events, deals, and blog posts. This was implemented using ACF front end editing, so the chamber members wouldn't need access to the WordPress dashboard.
+As the sole developer on this project, I translated the design into a responsive website and created an editing experience that would work for both the client and members logging in to edit their individual pages. In addition to the site redesign I also handled data migration from their old site. This included importing data and creating accounts for over 400 members.
 
-Project developed for Vector & Ink.
+*Created @ Vector & Ink*

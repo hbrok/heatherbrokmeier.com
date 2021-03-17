@@ -1,14 +1,15 @@
 ---
 title: Bezzerwizzer
-order: 200
 thumbnail: /assets/img/projects/bezzerwizzer-main.png
 link: https://hbrok.github.io/bezzerwizzer/
-source: https://github.com/hbrok/bezzerwizzer
-skills: HTML, SASS, JavaScript, ES6
+source: https://github.com/hbrok/bezzerwizzer/
+skills: JavaScript, ES6, HTML, SASS
+excerpt: Bezzerwizzer board game prototype.
+order: 70
 ---
 
-This project is based on the board game [Bezzerwizzer](https://en.wikipedia.org/wiki/Bezzerwizzer), that I play with friends over Skype. However, they don't own a copy of the game and I wanted to make it easier for us to play this game long distance.
+I designed and developed this project based on the board game [Bezzerwizzer](https://en.wikipedia.org/wiki/Bezzerwizzer).
 
-My goal was to make it easy for my friends to keep track of game stats without having to write everything down. This way I can set up my physical copy of the game, and they can use the online version and everyone will know what's going on.
+The goal was to make a version of the game that would help play this game with friends via video chat. The app lets you keep track of all player's movement, tiles, and scores without needing to own a copy of the game.
 
 I used this project as an opportunity to practice using ES6 with no frameworks and CSS Grid.

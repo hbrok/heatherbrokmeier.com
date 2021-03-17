@@ -1,9 +1,10 @@
 ---
 title: UC Hunting Properties
-skills: WordPress, HTML, CSS, PHP, SVG
 thumbnail: /assets/img/projects/uchunting-properties-main.png
 link: https://www.uchuntingproperties.com/
-order: 100
+skills: WordPress, HTML, CSS, PHP, SVG
+excerpt: Custom WordPress build for a real estate website.
+order: 2017
 ---
 
 Custom WordPress site built for UC Hunting Properties, a realty company in Wisconsin.

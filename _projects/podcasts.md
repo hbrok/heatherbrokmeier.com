@@ -1,13 +1,16 @@
 ---
 title: Podcast Search
-order: 1
 thumbnail: /assets/img/projects/podcast-search-main.png
 link: https://hb-podcast-app.herokuapp.com/
-source: https://github.com/hbrok/podcast-app
-skills: Vue.js, Javascript, HTML, SASS
+source: https://github.com/hbrok/podcast-app/
+skills: Vue.js, JavaScript, HTML, SASS
+excerpt: Vue.js app for searching adn playing iTunes podcast feeds.
+order: 30
 ---
 
-I really like podcasts, so I was interested in building a podcast player while learning the ropes of Vue.js. This app pulls from the [Itunes Search API](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html#//apple_ref/doc/uid/TP40017632-CH3-SW1) to search for podcasts, and then pulls all of a podcast's individual episodes from the podcast feed.
+I built this podcast player for fun while learning the ropes of Vue.js. It started [in a Codepen](https://codepen.io/hbrok/pen/NyNReB) and eventually moved to it's own project.
 
-The app also has a built in player that allows you to play episodes on the page. I adapted some of the audio player functions from Day 11 of Wes Bos' [JavaScript 30](https://www.javascript30.com/) course.
+It pulls data from the [Itunes Search API](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html#//apple_ref/doc/uid/TP40017632-CH3-SW1) to search for podcasts and pull all of a podcast's individual episodes.
+
+The app includes has an audio player that allows you to listen episodes on the page. I adapted some of the audio player functions from Day 11 of Wes Bos' [JavaScript 30](https://www.javascript30.com/) course.
  
