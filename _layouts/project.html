@@ -6,26 +6,28 @@
 			<div class="project-details">
 				<h1 class="project-title project-tease-title">{{ title }}</h1>
 
-				{% if role %}
-					<p>
-						<strong>Role:</strong> {{ role }}
-					</p>
+				{% if excerpt %}
+					<p>{{ excerpt }}</p>
 				{% endif %}
 
-				{% if skills %}
-					<p>
+				<p>
+					{% if role %}
+						<strong>Role:</strong> {{ role }}<br>
+					{% endif %}
+
+					{% if skills %}
 						<strong>Skills/Technology Used:</strong> {{ skills }}
-					</p>
-				{% endif %}
+					{% endif %}
+				</p>
 
 				{% if link or source %}
 					<p>
 						{% if link %}
-							<a href="{{ link }}" class="button">Visit Site</a>
+							<a href="{{ link }}" target="_blank" rel="noopener noreferrer" class="button">Visit Site</a>
 						{% endif %}
 
 						{% if source %}
-							<a href="{{ source }}" class="button">Source Code</a>
+							<a href="{{ source }}" target="_blank" rel="noopener noreferrer" class="button">Source Code</a>
 						{% endif %}
 					</p>
 				{% endif %}

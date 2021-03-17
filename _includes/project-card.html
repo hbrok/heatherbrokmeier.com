@@ -1,0 +1,17 @@
+<article class="project-intro">
+  <div class="project-details project-tease-details">
+    <h2 class="project-title project-tease-title">{{ project.data.title }}</h2>
+    {% if project.data.excerpt %}
+      <p>{{ project.data.excerpt }}</p>
+    {% else %}
+      <p>{{ project.data.skills }}</p>
+    {% endif %}
+    <a href="{{ site.baseurl }}{{ project.url }}" class="button">View this Project</a>
+  </div>
+
+  <div class="project-thumbnail">
+    <a href="{{ site.baseurl }}/{{ project.link }}">
+      <img src="{{ project.data.thumbnail }}" alt="Screenshot of {{ project.data.title }}">
+    </a>
+  </div>
+</article>

@@ -9,19 +9,7 @@
   <section class="projects">
     {% assign projects = collections.projects | sort %}
     {% for project in projects %}
-      <article class="project-intro">
-        <div class="project-details project-tease-details">
-          <h2 class="project-title project-tease-title">{{ project.data.title }}</h2>
-          <p>{{ project.data.skills }}</p>
-          <a href="{{ site.baseurl }}{{ project.url }}" class="button">View this Project</a>
-        </div>
-
-        <div class="project-thumbnail">
-          <a href="{{ site.baseurl }}/{{ project.link }}">
-            <img src="{{ project.data.thumbnail }}" alt="Screenshot of {{ project.data.title }}">
-          </a>
-        </div>
-      </article>
+      {% include project-card.html %}
     {% endfor %}
   </section>
 </main>

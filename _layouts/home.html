@@ -21,21 +21,11 @@
 
 			{% assign projects = collections.projects | sort %}
 			{% for project in projects limit:3 %}
-				<article class="project-intro">
-					<div class="project-details project-tease-details">
-						<h3 class="project-title project-tease-title">{{ project.data.title }}</h3>
-						<p>{{ project.data.skills }}</p>
-						<a href="{{ site.baseurl }}{{ project.url }}" class="button">View this Project</a>
-					</div>
-
-					<div class="project-thumbnail">
-						<img src="{{ project.data.thumbnail }}" alt="">
-					</div>
-				</article>
+				{% include project-card.html %}
 			{% endfor %}
 
 			<p class="text-center">
-				<a href="{{ site.baseurl }}/projects/" class="button">View More Projects</a>
+				<a href="{{ site.baseurl }}/projects/" class="button">View All Projects</a>
 			</p>
 
 		</section>
