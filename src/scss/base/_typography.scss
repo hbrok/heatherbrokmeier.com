@@ -72,37 +72,15 @@ ul,
 ol {
     margin: 0 0 2em 1.5em;
     padding: 0;
-    list-style-type: none;
     line-height: 1.5; 
-    
-    li::before {
-        display: inline-block;
-        width: 1.5em;
-        margin-left: -2em;
-        padding-right: 0.5em;
-        text-align: right;
-    }
 }
 
-.container ul li {
+.container li {
     margin-bottom: 0.5em;
-    
-    &::before {
-        content: "•";
-        font-size: 1.875rem;
-        line-height: 0;
-        color: $primary-light;
-    }
-}
 
-.container ol li {
-    margin-bottom: 0.5em;
-    counter-increment: step-counter;
-
-    &::before {
-        content: counter(step-counter) ".";
+    &::marker {
         color: $primary-light;
-        font-family: $font-heading;
+        font-weight: bold;
     }
 }
 
