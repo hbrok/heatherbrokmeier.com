@@ -1,7 +1,5 @@
 .site-footer {
-    display: flex;
     margin: 3rem auto 0 auto;
-    padding: 2rem 0;
     background-color: $primary-light;
     color: $white;
     text-align: center;
@@ -9,10 +7,15 @@
     a {
         color: inherit;
     }
+
+    .swoosh {
+        transform: rotate(180deg) translateY(1px);
+    }
 }
 
 .site-footer-inner {
     margin: 0 auto;
+    padding: 2rem 0;
     text-align: center;
 }
 

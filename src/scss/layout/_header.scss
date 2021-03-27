@@ -1,5 +1,9 @@
 .site-header-svg {
     background-color: $primary-light;
+
+    .swoosh {
+        transform: translateY(1px);
+    }
 }
 
 .header-nav {
