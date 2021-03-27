@@ -1,4 +1,4 @@
-.site-header-svg {
+.header{
     background-color: $primary-light;
 
     .swoosh {
@@ -7,18 +7,30 @@
 }
 
 .header-nav {
-    margin-top: -1.5rem;
-    margin-bottom: 1.5rem;
-    padding: 0 3rem;
-    text-align: center;
+    display: grid;
+    grid-template-columns: auto min-content min-content;
+    grid-gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    padding-top: .5rem;
+    text-align: left;
+}
 
-    @media (min-width: 60rem) {
-        text-align: left;
+.header-link {
+    border-color: $primary-light;
+    color: $gray;
+    
+
+    &:hover,
+    &:focus {
+        color: $gray;
+        border-bottom: 2px solid currentColor;
     }
 
-    .home-link {
-        border: 0;
+    // My name
+    &:first-child {
+        margin-right: auto;
         font-family: $font-heading;
-        font-size: 1.5rem;
     }
 }

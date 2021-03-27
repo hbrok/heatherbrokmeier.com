@@ -23,14 +23,12 @@
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
-	<header>
-		<div class="site-header-svg">
-			{% include swoosh.html %}
-		</div>
+	<header class="header">
+		<nav class="header-nav">
+			<a href="/" class="header-link" aria-hidden="true">Heather Brokmeier</a>
+			<a href="/" class="header-link">Home</a>
+			<a href="/projects" class="header-link">Projects</a>
+		</nav>
 
-		{% if layout != "home" %}
-			<nav class="header-nav">
-				<a href="/" class="home-link">Heather Brokmeier</a>
-			</nav>
-		{% endif %}
+		{% include swoosh.html %}
 	</header>
