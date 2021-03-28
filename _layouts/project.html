@@ -49,11 +49,11 @@
 			{% assign previous = collections.projects | getPreviousCollectionItem: page %}
 
 			{% if previous %}
-				<a class="page-navigation-prev" href="{{ previous.url }}">&laquo; {{ previous.data.title }}</a>
+				<a class="page-navigation-prev" href="{{ previous.url }}">&laquo;&nbsp;{{ previous.data.title }}</a>
 			{% endif %}
 
 			{% if next %}
-				<a class="page-navigation-next" href="{{ next.url }}">{{ next.data.title }} &raquo;</a>
+				<a class="page-navigation-next" href="{{ next.url }}">{{ next.data.title }}&nbsp;&raquo;</a>
 			{% endif %}
 		</nav>
 	</article>
