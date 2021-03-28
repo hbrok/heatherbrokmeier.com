@@ -1,10 +1,11 @@
 {% include header.html %}
 
-<main class="project">
+<main>
 	<article>
-		<section class="project-intro">
-			<div class="project-details">
-				<h1 class="project-title project-tease-title">{{ title }}</h1>
+		<section class="project">
+				<h1 class="project__title">{{ title }}</h1>
+
+			<div class="project__details">
 
 				{% if excerpt %}
 					<p>{{ excerpt }}</p>
@@ -21,26 +22,24 @@
 				</p>
 
 				{% if link or source %}
-					<p>
-						{% if link %}
-							<a href="{{ link }}" target="_blank" rel="noopener noreferrer" class="button">Visit Site</a>
-						{% endif %}
+					{% if link %}
+						<a href="{{ link }}" target="_blank" rel="noopener noreferrer" class="button">Visit Site</a>
+					{% endif %}
 
-						{% if source %}
-							<a href="{{ source }}" target="_blank" rel="noopener noreferrer" class="button">Source Code</a>
-						{% endif %}
-					</p>
+					{% if source %}
+						<a href="{{ source }}" target="_blank" rel="noopener noreferrer" class="button">Source Code</a>
+					{% endif %}
 				{% endif %}
 			</div>
 
-			<div class="project-thumbnail">
+			<div class="project__thumbnail">
 				{% if link %}<a href="{{ link }}">{% endif %}
 					<img src="{{ thumbnail }}" alt="Screenshot of {{ title }}">
 				{% if link %}</a>{% endif %}
 			</div>
 		</section>
 
-		<section class="project-content container">
+		<section class="container">
 			{{ content }}
 		</section>
 
