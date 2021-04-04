@@ -2,19 +2,18 @@
 title: UC Hunting Properties
 thumbnail: /assets/img/projects/uchunting-properties-main.png
 link: https://www.uchuntingproperties.com/
-skills: WordPress, HTML, CSS, PHP, SVG
+role: Web Developer
+skills: WordPress, HTML, CSS/Sass, PHP, SVG
 excerpt: Custom WordPress build for a real estate website.
 order: 2017
 ---
 
-Custom WordPress site built for UC Hunting Properties, a realty company in Wisconsin.
+UC Hunting Properties is a realty company located in Portage, WI. Their previous site used a pre-built WordPress real estate theme that didn't suit their needs. They needed a custom site that was tailored specifically for them.
 
-This site has extensive customization in the WordPress backend using Advanced Custom Fields. With multiple offices each needing their own login to add and update properties, I focused on making the user interface for editing properties as straight-forward as possible.
+I started on this project after most of the front end development work was completed. My focus was to make editing property details as easy and straight-forward as possible.
 
-There is a lot going on "behind the scenes" on this site. Each office UCH is affiliated with needed an individual login for adding, updating, and managing their own listings. New listings are approved by an administrator before being published.
+One major issue I addressed was to add consistency when location data (city, state, county) was added to a property. On the previous site, editors were able to create location names at will which resulted in typos, duplicated location names, and some properties without location data.
 
-One pain point from their previous website was keeping track of their city/state/county taxonomy that was used for searching properties on the front end. Editors were able to create new terms (or skip adding them at all) which resulted in duplicate terms, misspelled terms, and some properties with no terms at all. This made some properties impossible to find in the search.
+I added required latitude and longitude fields and connected to the [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview) to automatically fetch the location data. Now, when editors add new properties the location data is always present and consistent.
 
-In order to solve this, we connected to the Google Maps Geocoding API to automatically fetch the city/state/county based on latitude and longitude. City/state/county data is still saved in a taxonomy to make querying posts easier, but it's done on post save without editors having to do anything.
-
-Project developed for Vector & Ink.
+*Created @ Vector & Ink*

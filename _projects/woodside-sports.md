@@ -2,14 +2,14 @@
 title: Woodside Sports Complex
 thumbnail: /assets/img/projects/woodside-main.png
 link: https://www.woodsidesports.com/
-role: Web Development Front & Back
-skills: WordPress, React (Block Editor), HTML, SCSS, PHP
+role: Web Developer
+skills: WordPress, Timber, Block Editor, HTML, CSS/Sass, PHP
 excerpt: Custom WordPress build using the Block Editor.
 order: 10
 ---
 
-Woodside Sports Complex is a sports complex located in Wisconsin. They needed a new website that was easy for them to update, and that listed the sports events taking place in an easy to read way.
+Woodside Sports Complex is located in Wisconsin Dells, WI. They needed to list all of their sporting events in a way that was both easy to read and easy to update.
 
-This was a custom WordPress build based on a custom in-house starter theme built by me. This site also included custom blocks using the [WordPress Block Editor](https://developer.wordpress.org/block-editor/)/
+This was a custom WordPress build based on a custom in-house starter theme I created. I also built custom blocks in JavaScript for the [WordPress Block Editor](https://developer.wordpress.org/block-editor/).
 
 *Created @ Vector & Ink*
