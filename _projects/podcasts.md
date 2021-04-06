@@ -9,6 +9,8 @@ excerpt: Vue.js app for searching iTunes podcast feeds and playing podcasts.
 order: 30
 ---
 
+*4/5/21: Time has taken its toll on this project, and the live version isn't currently working. A fix is in the works!*
+
 I built this podcast player for fun while learning the ropes of Vue.js. [It started in a Codepen](https://codepen.io/hbrok/pen/NyNReB) and eventually moved to its own project.
 
 It pulls data from the [iTunes Search API](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html#//apple_ref/doc/uid/TP40017632-CH3-SW1) to search for a podcast and list all of its individual episodes.
